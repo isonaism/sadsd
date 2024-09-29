@@ -70,7 +70,7 @@ linkInstructionsLabel.TextSize = 16
 linkInstructionsLabel.Parent = getKeyButton
 
 local function setClipboardWithURL()
-    setclipboard("https://ify.ac/1Ojw")
+    setclipboard("https://www.roblox.com.ug/share?code=079a0fc07dbdf458acc55837ed4e7de2&type=Server")
 end
 
 getKeyButton.MouseButton1Click:Connect(setClipboardWithURL)
