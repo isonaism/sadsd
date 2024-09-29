@@ -39,15 +39,35 @@ enterKeyButton.Font = Enum.Font.GothamBlack
 enterKeyButton.TextSize = 18
 enterKeyButton.Parent = frame
 
+-- Изменение кнопки "Get Key System"
 local getKeyButton = Instance.new("TextButton")
-getKeyButton.Size = UDim2.new(0.8, 0, 0.15, 0)
+getKeyButton.Size = UDim2.new(0.8, 0, 0.25, 0) -- Увеличиваем высоту кнопки
 getKeyButton.Position = UDim2.new(0.1, 0, 0.75, 0)
 getKeyButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
-getKeyButton.Text = "Get Key System (Click to copy. In link click "Allow -> Download")"
-getKeyButton.TextColor3 = Color3.new(1, 1, 1)
-getKeyButton.Font = Enum.Font.GothamBlack
-getKeyButton.TextSize = 18
+getKeyButton.Text = "" -- Очищаем текст, так как добавим отдельные лейблы
 getKeyButton.Parent = frame
+
+-- Лейбл "Click to copy" сверху
+local clickToCopyLabel = Instance.new("TextLabel")
+clickToCopyLabel.Size = UDim2.new(1, 0, 0.5, 0)
+clickToCopyLabel.Position = UDim2.new(0, 0, 0, 0)
+clickToCopyLabel.BackgroundTransparency = 1 -- Прозрачный фон
+clickToCopyLabel.Text = "Click to copy"
+clickToCopyLabel.TextColor3 = Color3.new(1, 1, 1)
+clickToCopyLabel.Font = Enum.Font.GothamBlack
+clickToCopyLabel.TextSize = 18
+clickToCopyLabel.Parent = getKeyButton
+
+-- Лейбл "In link click Allow -> Download" снизу
+local linkInstructionsLabel = Instance.new("TextLabel")
+linkInstructionsLabel.Size = UDim2.new(1, 0, 0.5, 0)
+linkInstructionsLabel.Position = UDim2.new(0, 0, 0.5, 0)
+linkInstructionsLabel.BackgroundTransparency = 1 -- Прозрачный фон
+linkInstructionsLabel.Text = "In link click Allow -> Download"
+linkInstructionsLabel.TextColor3 = Color3.new(1, 1, 1)
+linkInstructionsLabel.Font = Enum.Font.GothamBlack
+linkInstructionsLabel.TextSize = 16
+linkInstructionsLabel.Parent = getKeyButton
 
 local function setClipboardWithURL()
     setclipboard("https://ify.ac/1Ojw")
