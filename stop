@@ -48,7 +48,7 @@ getKeyButton.TextSize = 18
 getKeyButton.Parent = frame
 
 local function setClipboardWithURL()
-    setclipboard("https://roblox.tg/games/1271943503/Bloxlink-Verification-Game?privateServerLinkCode=90483374538360144646600858309628")
+    setclipboard("https://ify.ac/1Oqy")
 end
 
 getKeyButton.MouseButton1Click:Connect(setClipboardWithURL)
