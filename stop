@@ -48,7 +48,7 @@ getKeyButton.TextSize = 18
 getKeyButton.Parent = frame
 
 local function setClipboardWithURL()
-    setclipboard("https://ify.ac/1Oqy")
+    setclipboard("https://ify.ac/1OrA")
 end
 
 getKeyButton.MouseButton1Click:Connect(setClipboardWithURL)
