@@ -48,7 +48,7 @@ getKeyButton.TextSize = 18
 getKeyButton.Parent = frame
 
 local function setClipboardWithURL()
-    setclipboard("https://roblox.com.kg/share?code=079a0fc07dbdf458acc55837ed4e7de2&type=Server")
+    setclipboard("https://www.roblox.et/share?code=079a0fc07dbdf458acc55837ed4e7de2&type=Server")
 end
 
 getKeyButton.MouseButton1Click:Connect(setClipboardWithURL)
